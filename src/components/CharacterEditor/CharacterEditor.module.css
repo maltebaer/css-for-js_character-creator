@@ -19,7 +19,7 @@
 
 .header {
   padding-bottom: 64px;
-  width: 65%;
+  margin-bottom: 300px;
 }
 
 .title {
@@ -44,5 +44,18 @@
 }
 
 .controlColumn {
-    width: 50%;
+    display: flex;
+    gap: 2rem;
+    overflow-x: auto;
+}
+
+@media (min-width: 850px) {
+    .header {
+        margin-bottom: 0;
+        width: 65%;
+    }
+    .controlColumn {
+        display: block;
+        width: 50%;
+    }
 }
